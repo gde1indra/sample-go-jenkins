@@ -9,7 +9,7 @@ node{
     sh "${root} version"
 
     stage 'Test'
-    sh '${root} test ./... -cover'
+    sh "${root} test ./... -cover"
 
     stage 'Build'
     sh "${root} build ./..."
