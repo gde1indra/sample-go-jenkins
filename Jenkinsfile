@@ -1,6 +1,6 @@
 node{
     // Ensure the desired
-    def root = tool type: 'go' name: 'Go 1.15'
+    def root = tool type: 'go', name: 'Go 1.15'
 
     // Export
     withEnv(["GOROOT=${root}","PATH+GO=${root}/bin"]){
